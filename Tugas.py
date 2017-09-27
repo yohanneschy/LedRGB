@@ -21,7 +21,7 @@ class Aplikasi(QtGui.QMainWindow, Ui_MainWindow):
         self.horizontalSlider_Merah.valueChanged.connect(self.Merah)   
         self.horizontalSlider_Hijau.valueChanged.connect(self.Hijau)        
         self.horizontalSlider_Biru.valueChanged.connect(self.Biru)
-        self.TXdata = bytearray(3)
+        self.TXdata = bytearray(2)
         
     def Merah(self):
         nilaiMerah  = self.horizontalSlider_Merah.value()   
