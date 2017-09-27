@@ -29,9 +29,6 @@ void loop(){
   if (Serial.available()){
    int nBytes = Serial.readBytes(RXBuf,sizeof(RXBuf));
    if (nBytes>=2){
-//    NilaiMerah = int(RXBuf[0]);
-//    NilaiHijau = int(RXBuf[1]);
-//    NilaiBiru  = int(RXBuf[2]);
     if (RXBuf[0]=='R'){NilaiMerah = int(RXBuf[1]);}
     if (RXBuf[0]=='G'){NilaiHijau = int(RXBuf[1]);}
     if (RXBuf[0]=='B'){NilaiBiru = int(RXBuf[1]);}
